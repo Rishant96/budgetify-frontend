@@ -1,0 +1,12 @@
+exports[`HeaderContainer should render initial layout 1`] = `
+Array [
+<div class="headerstyles__Navbar-sc-1u2hqr-0 gGToPh">
+<h1 class="headerstyles__Brand-sc-1u2hqr-1 lbbjsy">
+<a class="headerstyles__BrandLink-sc-1u2hqr-2 jacLXc" href="/">Budgetify</a>
+</h1>
+<div class="headerstyles__LinkBelt-sc-1u2hqr-3 djZFQx">
+<a class="headerstyles__Link-sc-1u2hqr-4 cBmRXL" href="/signin">Login</a>
+</div>
+</div>,
+]
+`;
