@@ -41,7 +41,7 @@ export const ManageContainer: React.FC<ManageProps> = ({
         {budgets.map(budget => (
           <Accordion.Item key={budget._id}>
             <Accordion.Header>
-              {budget.name} ({MONTH_NAMES[budget.month]})
+              {budget.name}
             </Accordion.Header>
             <Accordion.Body id={budget._id}>
               {budget.items.map(item => (
