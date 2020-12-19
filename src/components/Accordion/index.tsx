@@ -59,9 +59,9 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
     <Header onClick={() => setToggleShow(!toggleShow)} {...restProps}>
       {children}
       {toggleShow ? (
-        <img src="/images/close-slim.png" alt="Close" />
+        <img src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/close-512.png" alt="Close" />
       ) : (
-        <img src="/images/add.png" alt="Open" />
+        <img src="https://e7.pngegg.com/pngimages/781/45/png-clipart-plus-plus.png" alt="Open" />
       )}
     </Header>
   );
@@ -75,13 +75,13 @@ Accordion.Body = function AccordionBody({ children, id, ...restProps }) {
       <span>{children}</span>
       <Toolbelt>
         <Link to={ROUTES.CHARTS + `/${id}`}>
-          <img src="/images/chart.png" alt="Charts" />
+          <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-vector-bar-chart-icon-png-image_894652.jpg" alt="Charts" />
         </Link>
         <div>
           <Link to={ROUTES.CREATOR + `/${id}`}>
-            <img src="/images/edit.png" alt="Edit" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Feedbin-Icon-home-edit.svg/1200px-Feedbin-Icon-home-edit.svg.png" alt="Edit" />
           </Link>
-          <img onClick={() => {axios.delete(URL_BUDGETS + `/${id}`)}} src="/images/trash.png" alt="Delete" />
+          <img onClick={() => {axios.delete(URL_BUDGETS + `/${id}`)}} src="https://lh3.googleusercontent.com/proxy/HRP1N7kwq-1DoPbHYFiiZ4AUlq5cIqWsbquo0eZ455zQbjMW7k1rMGI2hugX1EQznUJhaeuTh9Nxj52KFIqr0Tym5NBHAiEnibJCAG7HPfX3xlXPUbzX1FVI0O6hu52MmC_t" alt="Delete" />
         </div>
       </Toolbelt>
     </Body>

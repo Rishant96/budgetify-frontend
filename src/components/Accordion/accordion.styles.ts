@@ -2,7 +2,8 @@ import styled from "styled-components/macro";
 import {
   fontLight,
   backgroundGrey,
-  backgroundDarkGrey} from "../../constants/styling";
+  backgroundDarkGrey
+} from "../../constants/styling";
 import { Link as ReachRouterLink } from "react-router-dom";
 
 export const Container = styled.div`
@@ -61,18 +62,15 @@ export const Header = styled.div`
   align-items: center;
 
   img {
-    filter: brightness(0) invert(0.4);
     width: 24px;
     user-select: none;
-  }
-
-  img:hover {
-    filter: invert(0.25);
   }
 
   &.insert {
     background-color: #e6fff2;
     padding: 0;
+    max-width: 728px;
+    margin: auto;
     margin-top: 10px;
   }
 
