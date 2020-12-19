@@ -12,12 +12,9 @@ type ChartsProps = {
 export const Charts: React.FC<ChartsProps> = ({
   children,
   isUser,
-  userEmail,
-  ...restProps
-}) => {
+  userEmail}) => {
   const [titles, setTitles] = useState<any>();
   const [amounts, setAmounts] = useState<any>();
-  const [purchases, setPurchases] = useState<any>();
   const { id }: any = useParams<string>();
 
   useEffect(() => {
@@ -32,7 +29,7 @@ export const Charts: React.FC<ChartsProps> = ({
       setTitles(titles_l);
       setAmounts(amounts_l);
     });
-  }, []);
+  }, [id]);
 
   return (
     <>

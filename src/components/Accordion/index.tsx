@@ -4,7 +4,6 @@ import {
   Frame,
   Title,
   Item,
-  Inner,
   Header,
   Body,
   Toolbelt,

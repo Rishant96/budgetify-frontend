@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import { Redirect, useParams } from "react-router-dom";
 import { Creator } from "../components/Creator";
 import { URL_BUDGETS } from "../constants/backend";
@@ -10,9 +10,7 @@ type EditorProps = {
 
 export const EditorContainer: React.FC<EditorProps> = ({
   children,
-  userEmail,
-  ...restProps
-}) => {
+  userEmail}) => {
   const [form, setForm] = useState({
     name: "",
     month: null
@@ -39,7 +37,7 @@ export const EditorContainer: React.FC<EditorProps> = ({
         setAmounts(tmpAmounts);
       });
     }
-  }, []);
+  }, [id]);
 
   const spend = (key: number) => (
     <>

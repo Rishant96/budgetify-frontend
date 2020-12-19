@@ -1,13 +1,8 @@
 import styled from "styled-components/macro";
 import {
-  primary,
-  fontDark,
   fontLight,
-  secondary,
   backgroundGrey,
-  backgroundDarkGrey,
-  fontForm
-} from "../../constants/styling";
+  backgroundDarkGrey} from "../../constants/styling";
 import { Link as ReachRouterLink } from "react-router-dom";
 
 export const Container = styled.div`

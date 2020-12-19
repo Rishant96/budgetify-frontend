@@ -4,7 +4,6 @@ import { Accordion } from "../components";
 import { URL_BUDGETS } from "../constants/backend";
 
 import axios from "axios";
-import { MONTH_NAMES } from "../constants/months";
 
 type Budget = {
   _id: string;
@@ -21,11 +20,8 @@ type ManageProps = {
 
 export const ManageContainer: React.FC<ManageProps> = ({
   children,
-  userEmail,
-  ...restProps
-}) => {
+  userEmail}) => {
   const [budgets, setBudgets] = useState<Budget[]>([]);
-  const totals = [];
 
   useEffect(() => {
     axios.get(URL_BUDGETS + `/all/${userEmail}`).then(res => {
@@ -33,7 +29,7 @@ export const ManageContainer: React.FC<ManageProps> = ({
       res.data.forEach((item: any) => tmp.push({ ...item, key: item._id }));
       setBudgets(tmp);
     });
-  }, []);
+  }, [userEmail]);
 
   return (
     <Accordion>

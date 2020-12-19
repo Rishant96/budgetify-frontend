@@ -1,1 +1,1 @@
-export const URL_BUDGETS = "https://g13u8.sse.codesandbox.io/api/budgets";
+export const URL_BUDGETS = "https://petite-flannel-mail.glitch.me/api/budgets";
